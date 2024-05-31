@@ -12,9 +12,13 @@ public class TC001_WebInput extends BaseClass {
 	public void WebInputTestValidation()
 	{
 		HomePage hp=new HomePage(driver);
+		logger.info("******************Different Input****************************");
 		hp.clkOnWebInput();
 		WebInput webip=new WebInput(driver);
 		webip.inputNumberData();
+		webip.inputText();
+		webip.inputPassword();
+		webip.clkDatePicker();
 	}
 	
 
